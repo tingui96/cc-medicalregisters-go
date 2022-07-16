@@ -17,9 +17,9 @@ type SmartContract struct {
 //Insert struct field in alphabetic order => to achieve determinism accross languages
 // golang keeps the order when marshal to json but doesn't order automatically
 type ClinicHistory struct {
-	Description string `json:"Description string"`
 	ID          string `json:"ID"`
 	PatientName string `json:"PatientName string"`
+	Description string `json:"Description string"`
 	State       int    `json:"State int"`    //From 1 to 5
 	Group       string `json:"Group string"` //Lozano or ASP
 }
